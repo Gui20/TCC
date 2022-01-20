@@ -14,8 +14,8 @@ prewarp =
 ; detection will ignore plates that are too large.  This is a good efficiency technique to use if the 
 ; plates are going to be a fixed distance away from the camera (e.g., you will never see plates that fill 
 ; up the entire image
-max_plate_width_percent = 200 ;tava 100 mudei esssa porra 
-max_plate_height_percent = 200 ;tava 100 mudei esssa porra 
+max_plate_width_percent = 100 
+max_plate_height_percent = 100 
 
 ; detection_iteration_increase is the percentage that the LBP frame increases each iteration.
 ; It must be greater than 1.0.  A value of 1.01 means increase by 1%, 1.10 increases it by 10% each time. 
@@ -44,7 +44,7 @@ detector = lbpcpu
 
 ; If set to true, all results must match a postprocess text pattern if a pattern is available.  
 ; If not, the result is disqualified. 
-must_match_pattern = 0
+must_match_pattern = 1
 
 ; Bypasses plate detection.  If this is set to 1, the library assumes that each region provided is a likely plate area.
 skip_detection = 0
